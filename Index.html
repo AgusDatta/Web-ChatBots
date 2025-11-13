@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LiquidBots – Chatbots personalizados</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="Index.css">
+  
+
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="nav-brand">
+        <div class="brand-logo">LB</div>
+        <div class="brand-text">
+          <span class="brand-name">LiquidBots</span>
+          <span class="brand-tag">Chatbots a medida</span>
+        </div>
+      </div>
+
+      <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+
+      <nav class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#casos-uso">Casos de uso</a>
+        <a href="#planes">Planes</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <button class="nav-cta" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">
+        Quiero mi chatbot
+      </button>
+    </header>
+
+    <!-- HERO -->
+    <main id="inicio" class="hero">
+      <div>
+        <div class="hero-badge">
+          <span>Nuevo</span>
+          Chatbots con IA avanzada
+        </div>
+
+        <h1 class="hero-title">
+          Chatbots <span>personalizados</span> que venden, responden y aprenden solos.
+        </h1>
+
+        <p class="hero-subtitle">
+          Diseñamos e integramos chatbots a medida para tu negocio, entrenados con tu información
+          y listos para responder 24/7 en WhatsApp, web e Instagram.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn-primary" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">
+            🚀 Quiero mi chatbot
+          </button>
+          <button class="btn-ghost" onclick="document.getElementById('como-funciona').scrollIntoView({behavior:'smooth'})">
+            ▶ Ver cómo funciona
+          </button>
+        </div>
+
+        <div class="hero-meta">
+          <span><span class="hero-meta-dot"></span> Respuestas instantáneas 24/7</span>
+          <span>Entrenado con tu web, PDFs y procesos</span>
+        </div>
+      </div>
+
+      <div class="hero-mockup">
+        <div class="glass-card">
+          <div class="glass-header">
+            <div class="glass-pill">Bot Soporte · E-commerce</div>
+            <div class="glass-avatar"></div>
+          </div>
+          <div class="glass-body">
+            <div class="glass-chat user">
+              ¿Tienen stock del modelo X en talle 42?
+            </div>
+            <div class="glass-chat bot">
+              Sí 💡 Tenemos el talle 42 disponible en negro y blanco.
+              Si querés, te mando el link para comprarlo ahora mismo.
+            </div>
+            <div class="glass-chat user">
+              Mandame el link y las cuotas.
+            </div>
+            <div class="glass-chat bot">
+              Acá lo tenés 👉 <strong>liquidbots.site/modelo-x</strong><br>
+              Hasta 6 cuotas sin interés con tarjeta.
+            </div>
+          </div>
+          <div class="glass-footer">
+            <div class="glass-status">
+              <span class="glass-status-dot"></span> Bot activo 24/7
+            </div>
+            <span>+40% respuestas atendidas</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- CÓMO FUNCIONA -->
+    <section id="como-funciona">
+      <div class="section-header">
+        <div class="section-kicker">Proceso</div>
+        <h2 class="section-title">Cómo llevamos tu chatbot de idea a realidad</h2>
+        <p class="section-subtitle">
+          Nos encargamos de todo: desde entender tu negocio hasta dejar el bot funcionando y optimizándolo con datos reales.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <div class="step-index">1</div>
+          <h3>Descubrimiento</h3>
+          <p>Primero entendemos tu negocio y tus objetivos.</p>
+          <ul>
+            <li>Relevamos preguntas frecuentes.</li>
+            <li>Revisamos tu web, PDFs y sistemas.</li>
+            <li>Definimos el tono y la personalidad del bot.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="step-index">2</div>
+          <h3>Diseño &amp; entrenamiento</h3>
+          <p>Diseñamos el flujo conversacional y entrenamos la IA.</p>
+          <ul>
+            <li>Diseño de journeys de usuario.</li>
+            <li>Integración con tus datos (FAQs, docs, etc.).</li>
+            <li>Pruebas y ajustes con casos reales.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="step-index">3</div>
+          <h3>Integración &amp; mejora</h3>
+          <p>Conectamos tu bot a los canales que ya usás.</p>
+          <ul>
+            <li>WhatsApp, web, Instagram o Messenger.</li>
+            <li>Métricas simples y claras.</li>
+            <li>Iteraciones mensuales de mejora.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASOS DE USO -->
+    <section id="casos-uso">
+      <div class="section-header">
+        <div class="section-kicker">Casos de uso</div>
+        <h2 class="section-title">Bots listos para distintos tipos de negocio</h2>
+        <p class="section-subtitle">
+          Creamos chatbots a medida, pero estos son algunos ejemplos reales de cómo podemos ayudarte.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>E-commerce &amp; tiendas online</h3>
+          <p>Atención automática para tu tienda 24/7.</p>
+          <ul>
+            <li>Consulta de stock y variantes.</li>
+            <li>Seguimiento de pedidos.</li>
+            <li>Upselling y recomendaciones.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Servicios &amp; turnos</h3>
+          <p>Reservas sin llamadas ni mensajes manuales.</p>
+          <ul>
+            <li>Agenda de turnos integrada.</li>
+            <li>Recordatorios automáticos.</li>
+            <li>Reprogramaciones rápidas.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Estudios contables / legales</h3>
+          <p>Un “asistente” que responde lo básico por vos.</p>
+          <ul>
+            <li>Preguntas frecuentes de clientes.</li>
+            <li>Recolección de datos iniciales.</li>
+            <li>Derivación al profesional correcto.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Soporte IT interno</h3>
+          <p>Un primer nivel de soporte para tu equipo.</p>
+          <ul>
+            <li>Reseteo de claves, accesos y FAQs.</li>
+            <li>Guías paso a paso.</li>
+            <li>Derivaciones a mesa de ayuda.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Educación &amp; cursos</h3>
+          <p>Asistente de alumnos y comunidad.</p>
+          <ul>
+            <li>Información de cursadas.</li>
+            <li>Acceso a materiales.</li>
+            <li>Recordatorios de fechas clave.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Proyectos a medida</h3>
+          <p>Si lo podés explicar, lo podemos automatizar.</p>
+          <ul>
+            <li>Bots para flujos internos.</li>
+            <li>Integración con APIs propias.</li>
+            <li>MVPs rápidos para validar ideas.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANES -->
+    <section id="planes">
+      <div class="section-header">
+        <div class="section-kicker">Planes</div>
+        <h2 class="section-title">Elegí el nivel de automatización que necesitás</h2>
+        <p class="section-subtitle">
+          Valores orientativos, siempre podemos ajustar el alcance a tu presupuesto y etapa del negocio.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card pricing-card">
+          <div class="pricing-tag">Ideal para probar</div>
+          <h3>Starter</h3>
+          <div class="pricing-price">Consultar<span> / bot</span></div>
+          <ul class="pricing-list">
+            <li>Hasta 1 canal (web o WhatsApp).</li>
+            <li>Base de preguntas frecuentes.</li>
+            <li>Flujo simple de atención.</li>
+            <li>Soporte inicial de 15 días.</li>
+          </ul>
+          <button class="btn-pricing" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">
+            Consultar plan Starter
+          </button>
+        </div>
+
+        <div class="card pricing-card pricing-featured">
+          <div class="pricing-tag">El más elegido</div>
+          <h3>Pro</h3>
+          <div class="pricing-price">Consultar<span> / bot</span></div>
+          <ul class="pricing-list">
+            <li>Hasta 2 canales (ej: web + WhatsApp).</li>
+            <li>Entrenamiento con docs y web.</li>
+            <li>Flujos de venta y soporte.</li>
+            <li>Panel simple de métricas.</li>
+            <li>Soporte y ajustes por 30 días.</li>
+          </ul>
+          <button class="btn-pricing" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">
+            Consultar plan Pro
+          </button>
+        </div>
+
+        <div class="card pricing-card">
+          <div class="pricing-tag">Para equipos grandes</div>
+          <h3>Enterprise</h3>
+          <div class="pricing-price">A medida<span> / proyecto</span></div>
+          <ul class="pricing-list">
+            <li>Integración con sistemas internos / APIs.</li>
+            <li>Múltiples canales y roles.</li>
+            <li>Entrenamiento avanzado.</li>
+            <li>Soporte y mejoras continuas.</li>
+          </ul>
+          <button class="btn-pricing" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">
+            Hablar sobre Enterprise
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros">
+      <div class="section-header">
+        <div class="section-kicker">Quiénes somos</div>
+        <h2 class="section-title">Un equipo chico, técnico y muy obsesivo</h2>
+        <p class="section-subtitle">
+          Combinamos experiencia en soporte IT, desarrollo y experiencia de usuario para que el bot no solo responda,
+          sino que responda bien.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div>
+          <p class="about-tag">Sobre LiquidBots</p>
+          <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 14px;">
+            Somos un estudio pequeño especializado en chatbots personalizados. No vendemos plantillas genéricas:
+            analizamos tu negocio, tu tono y tus procesos, y a partir de eso diseñamos un bot que realmente te ahorre tiempo.
+          </p>
+          <p style="font-size: 14px; color: var(--text-muted);">
+            Trabajamos con negocios que están creciendo y necesitan automatizar, pero sin perder el trato humano.
+            Nuestro foco está en que el chatbot sea un <strong>miembro más del equipo</strong>, no un robot frío.
+          </p>
+        </div>
+        <div class="about-highlight">
+          <strong>¿Quiénes están detrás?</strong><br>
+          <br>
+          Proyecto creado por <strong>Agustín</strong> e <strong>Ian</strong>, desarrolladores y
+          apasionados por la automatización. Si nos escribís, respondemos nosotros (y después el bot).”
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="section-header">
+        <div class="section-kicker">FAQ</div>
+        <h2 class="section-title">Preguntas frecuentes</h2>
+        <p class="section-subtitle">
+          Algunas dudas que suelen aparecer al momento de pensar en automatizar la atención con un chatbot.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div>
+          <div class="faq-item">
+            <div class="faq-q">¿En cuánto tiempo está listo el chatbot?</div>
+            <div class="faq-a">
+              Depende del alcance, pero un bot estándar puede estar listo entre 7 y 21 días desde la primera reunión.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">¿En qué plataformas se puede integrar?</div>
+            <div class="faq-a">
+              Podemos integrarlo en tu sitio web, WhatsApp, Instagram o Facebook Messenger, según lo que uses hoy en tu negocio.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">¿El bot se entrena con mi información?</div>
+            <div class="faq-a">
+              Sí, lo entrenamos con tu web, PDFs, documentos internos y preguntas frecuentes. El objetivo es que responda con tu lenguaje.
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="faq-item">
+            <div class="faq-q">¿Tengo que saber de IA o programación?</div>
+            <div class="faq-a">
+              Para nada. Vos nos contás cómo trabajás hoy y qué te gustaría delegar. Nosotros nos encargamos de toda la parte técnica.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">¿Qué pasa si el bot no sabe responder algo?</div>
+            <div class="faq-a">
+              Podemos configurarlo para que derive la conversación a un humano, tome datos de contacto o deje asentado un ticket de soporte.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <div class="section-header">
+        <div class="section-kicker">Contacto</div>
+        <h2 class="section-title">Contanos de tu negocio y te damos una propuesta</h2>
+        <p class="section-subtitle">
+          Completá este formulario y te respondemos con una propuesta clara, sin tecnicismos raros.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="card">
+          <form>
+            <div class="form-group">
+              <label for="nombre">Nombre y apellido</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" />
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="tunombre@ejemplo.com" />
+            </div>
+            <div class="form-group">
+              <label for="negocio">Tipo de negocio</label>
+              <select id="negocio" name="negocio">
+                <option value="">Seleccioná una opción</option>
+                <option value="ecommerce">E-commerce / Tienda online</option>
+                <option value="servicios">Servicios / Turnos</option>
+                <option value="estudio">Estudio contable / legal</option>
+                <option value="educacion">Educación / Cursos</option>
+                <option value="it">Soporte IT / interno</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Contanos brevemente qué te gustaría automatizar</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Por ejemplo: atención de consultas, reservas, soporte a clientes..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+              Enviar consulta
+            </button>
+            <p class="contact-note">
+              También podés escribirnos directamente por WhatsApp (acá iría el botón o link cuando lo agreguen).
+            </p>
+          </form>
+        </div>
+        <div style="font-size: 13px; color: var(--text-muted); display: flex; flex-direction: column; gap: 10px;">
+          <div class="about-highlight">
+            <strong>¿Preferís charlar primero?</strong><br>
+            Podés arrancar mandándonos un audio contando cómo trabajás hoy y qué te gustaría delegar al bot.
+            Nosotros te devolvemos ideas concretas de automatización.
+          </div>
+          <p>
+            Más adelante, pueden reemplazar este texto por un embebido de Calendly, un QR, o links directos a redes
+            sociales del proyecto (Instagram, LinkedIn, etc.).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <span>© <strong>LiquidBots</strong>. Todos los derechos reservados.</span>
+      <span>Hecho por un pequeño equipo obsesionado con los chatbots 🤖</span>
+    </footer>
+  </div>
+
+  <script src="Index.js"></script>
+</body>
+</html>
